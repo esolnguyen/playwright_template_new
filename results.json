@@ -1,0 +1,218 @@
+{
+  "config": {
+    "configFile": "/Users/nguyenthang/Workspace/Thesis/playwright/playwright.config.ts",
+    "rootDir": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/nguyenthang/Workspace/Thesis/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.2",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "customerDetailPage.spec.ts",
+      "file": "customerDetailPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Customer Detail Page",
+          "file": "customerDetailPage.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display customer details if customer exists",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 5897,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"customer-name\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"customer-name\"]')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"customer-name\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"customer-name\"]')\u001b[22m\n\n    at /Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts:23:51",
+                        "location": {
+                          "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                          "column": 51,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mcustomerName)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mcustomerAddress)\u001b[33m.\u001b[39mtoHaveText(\n \u001b[90m 25 |\u001b[39m       \u001b[32m\"123 Main St\\nSpringfield, Illinois\"\u001b[39m\n \u001b[90m 26 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                            "column": 51,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"customer-name\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"customer-name\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mcustomerName)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mcustomerAddress)\u001b[33m.\u001b[39mtoHaveText(\n \u001b[90m 25 |\u001b[39m       \u001b[32m\"123 Main St\\nSpringfield, Illinois\"\u001b[39m\n \u001b[90m 26 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts:23:51\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-29T16:16:46.300Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/nguyenthang/Workspace/Thesis/playwright/test-results/customerDetailPage-Custome-7d367--details-if-customer-exists/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/nguyenthang/Workspace/Thesis/playwright/test-results/customerDetailPage-Custome-7d367--details-if-customer-exists/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                        "column": 51,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ce6451bf715484e668a1-4291a2325c997b5a6207",
+              "file": "customerDetailPage.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should show \"No customer found\" if customer data is unavailable",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 5841,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('[data-testid=\"no-customer-message\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"no-customer-message\"]')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('[data-testid=\"no-customer-message\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"no-customer-message\"]')\u001b[22m\n\n    at /Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts:34:56",
+                        "location": {
+                          "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                          "column": 56,
+                          "line": 34
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m customerDetailPage\u001b[33m.\u001b[39mmockNoCustomer()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mnoCustomerMessage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mnoCustomerMessage)\u001b[33m.\u001b[39mtoHaveText(\n \u001b[90m 36 |\u001b[39m       \u001b[32m\"No customer found\"\u001b[39m\n \u001b[90m 37 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                            "column": 56,
+                            "line": 34
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('[data-testid=\"no-customer-message\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"no-customer-message\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m customerDetailPage\u001b[33m.\u001b[39mmockNoCustomer()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mnoCustomerMessage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(customerDetailPage\u001b[33m.\u001b[39mnoCustomerMessage)\u001b[33m.\u001b[39mtoHaveText(\n \u001b[90m 36 |\u001b[39m       \u001b[32m\"No customer found\"\u001b[39m\n \u001b[90m 37 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts:34:56\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-29T16:16:52.905Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/nguyenthang/Workspace/Thesis/playwright/test-results/customerDetailPage-Custome-ac322-ustomer-data-is-unavailable/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/nguyenthang/Workspace/Thesis/playwright/test-results/customerDetailPage-Custome-ac322-ustomer-data-is-unavailable/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/nguyenthang/Workspace/Thesis/playwright/src/tests/customerDetailPage.spec.ts",
+                        "column": 56,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ce6451bf715484e668a1-f74e2114046c67bf315f",
+              "file": "customerDetailPage.spec.ts",
+              "line": 30,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-29T16:16:46.026Z",
+    "duration": 12882.224999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
