@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  testDir: "./src/tests",
+  testDir: "./tests",
   timeout: 30000,
   use: {
     baseURL: "http://localhost:8080",
